@@ -1,67 +1,60 @@
 @charset "utf-8";
 @import "normalize";
 
+@import "sass/utilities/_all";
+$slate: #2D3644;
+$grey: #B6B6B6;
+$forest: #505D2D;
+$red: #B72633;
+
+@import "sass/base/_all";
+@import "sass/elements/_all";
+@import "sass/components/_all";
+@import "sass/grid/_all";
+@import "sass/layout/_all";
+
 body {
-  background: #718290;
-  text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
 }
 
-#hot-dog {
-  height: 18.75em;
-  margin-top: 6em;
+footer {
+  max-height: 3%;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+a.icon {
+  color: $red;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
-  }
+.space-above-and-below {
+  padding: 7% 0;
 }
 
-.welcome {
-  -webkit-animation-name: welcome;
-  -webkit-animation-duration: .9s;
+.red {
+  color: $red;
 }
 
-@-webkit-keyframes welcome {
-  from {
-    -webkit-transform: scale(0);
-    opacity: 0;
-  }
-  50% {
-   -webkit-transform: scale(0);
-   opacity: 0;
-  }
-  82.5% {
-    -webkit-transform: scale(1.03);
-    -webkit-animation-timing-function: ease-out;
-    opacity: 1;
-  }
-  to {
-    -webkit-transform: scale(1);
-  }
+.coral {
+  color: lightcoral;
+}
+
+.variant-1 {
+  border-bottom: 0.5px dashed white;
+  color: white;
+  max-width: 98px;
+}
+
+.variant-2 {
+  border-bottom: 0.5px dashed black;
+  color: black;
+  max-width: 120px;
+}
+
+.code {
+  background: url("/images/code.png") no-repeat right;
+  min-height: 350px;
+}
+
+.poetry {
+  background: url("/images/swimmer.jpg") no-repeat center;
+  min-height: 350px;
 }

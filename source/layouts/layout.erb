@@ -6,15 +6,47 @@
     <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
 
     <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <title>Melissa Leigh Gore</title>
 
     <link href='//fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
 
     <%= stylesheet_link_tag :site %>
     <%= javascript_include_tag :all %>
   </head>
 
+  <nav class="nav has-shadow">
+    <div class="container">
+      <div class="nav-left">
+        <a class="nav-item">
+          <h2 class="title red">Melissa Leigh Gore</h1>
+        </a>
+      </div>
+      <div class="nav-right is-hidden-mobile">
+        <a class="nav-item is-tab is-hidden-mobile">Bio</a>
+      </div>
+    </div>
+  </nav>
+
   <body class="<%= page_classes %>">
     <%= yield %>
   </body>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          <a class="icon" href="https://github.com/mlg-">
+            <i class="fa fa-github"></i>
+          </a>
+          <a class="icon" href="https://www.linkedin.com/in/melissaleighgore/">
+            <i class="fa fa-linkedin"></i>
+          </a>
+          <a class="icon" href="mailto:sayhi@melissaleighgore.com">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
 </html>

@@ -18,16 +18,22 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+p {
+  font-weight: 300;
+  font-size: 1.1em;
+  margin-bottom: 8px;
+}
+
 footer {
   max-height: 3%;
 }
 
-a.icon {
+a {
   color: $red;
 }
 
 .space {
-  padding: 4% 2%;
+  padding: 3% 2%;
 }
 
 .red {
@@ -38,9 +44,14 @@ a.icon {
   color: lightcoral;
 }
 
+@media (min-width: 769px) {
+  nav.home {
+    padding-top: 98px;
+  }
+}
+
 nav {
   text-align: center;
-  padding-top: 98px;
 
   a {
     color: $red;
@@ -48,6 +59,10 @@ nav {
     font-weight: 200;
     padding: 0 15px;
   }
+}
+
+.secondary {
+  margin-bottom: 15px;
 }
 
 

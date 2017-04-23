@@ -1,18 +1,16 @@
 ---
 title: Welcome to Middleman
 ---
-<section class="container space">
+<section class="container space is-large">
   <div class="columns">
     <div class="column">
-        <h2 class="title">Hi there.</h2>
-        <h2 class="title">I'm <strong><span class="red">Melissa Leigh Gore</span></strong>,</h2>
-        <h2 class="subtitle">a full-stack web developer and writer from Boston, MA.</h2>
+      <%= partial "intro" %>
     </div>
     <div class="column">
-      <nav>
-        <a href="#">bio</a> | 
-        <a href="#">contact</a> | 
-        <a href="#">blog</a>
+      <nav class="home">
+        <a href="/bio.html">about me</a> | 
+        <a href="/contact.html">contact</a> | 
+        <a href="/blog.html">blog</a>
       </nav>
     </div>
   </div>
@@ -34,4 +32,3 @@ title: Welcome to Middleman
     </div>
   </div>
 </section>
-

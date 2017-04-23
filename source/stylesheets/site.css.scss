@@ -66,9 +66,10 @@ nav {
     padding: 0 15px;
   }
 }
-
-.secondary {
-  margin-top: 20px;
+@media (min-width: 769px) {
+  .secondary {
+    margin-top: 50px;
+  }
 }
 
 // home page
@@ -110,4 +111,8 @@ nav {
 
 .mlg {
   margin-top: 55px;
+}
+
+.xu {
+  margin-top: 20px;
 }

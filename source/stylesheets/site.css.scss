@@ -13,6 +13,8 @@ $red: #B72633;
 @import "sass/grid/_all";
 @import "sass/layout/_all";
 
+// universal styles
+
 body {
   border-top: 8px solid $red;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,25 +26,29 @@ p {
   margin-bottom: 8px;
 }
 
-footer {
-  max-height: 3%;
-}
-
 a {
   color: $red;
 }
 
+footer {
+  max-height: 3%;
+}
+
+// custom helpers
+
 .space {
   padding: 3% 2%;
+}
+
+.margin-top {
+  margin-top: 15px;
 }
 
 .red {
   color: $red;
 }
 
-.coral {
-  color: lightcoral;
-}
+// nav menus
 
 @media (min-width: 769px) {
   nav.home {
@@ -62,9 +68,10 @@ nav {
 }
 
 .secondary {
-  margin-bottom: 15px;
+  margin-top: 20px;
 }
 
+// home page
 
 .variant-1 {
   border-bottom: 0.5px dashed white;
@@ -78,6 +85,17 @@ nav {
   max-width: 120px;
 }
 
+.about-me-variant {
+  border-bottom: 0.5px dashed $red;
+  color: $red;
+  max-width: 140px;
+}
+
+.about-me {
+  background: url("/images/chair.jpg") no-repeat right;
+  min-height: 150px;
+}
+
 .code {
   background: url("/images/code.png") no-repeat right;
   min-height: 350px;
@@ -86,4 +104,10 @@ nav {
 .poetry {
   background: url("/images/swimmer.jpg") no-repeat center;
   min-height: 350px;
+}
+
+// bio
+
+.mlg {
+  margin-top: 55px;
 }

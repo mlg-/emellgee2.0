@@ -14,6 +14,7 @@ $red: #B72633;
 @import "sass/layout/_all";
 
 body {
+  border-top: 8px solid $red;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -25,8 +26,8 @@ a.icon {
   color: $red;
 }
 
-.space-above-and-below {
-  padding: 4% 0;
+.space {
+  padding: 4% 2%;
 }
 
 .red {
@@ -36,6 +37,19 @@ a.icon {
 .coral {
   color: lightcoral;
 }
+
+nav {
+  text-align: center;
+  padding-top: 98px;
+
+  a {
+    color: $red;
+    font-size: 1.2em;
+    font-weight: 200;
+    padding: 0 15px;
+  }
+}
+
 
 .variant-1 {
   border-bottom: 0.5px dashed white;

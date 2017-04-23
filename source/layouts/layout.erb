@@ -15,27 +15,17 @@
     <%= javascript_include_tag :all %>
   </head>
 
-  <nav class="nav">
-    <div class="container">
-      <div class="nav-left">
-        <a class="nav-item">
-          <h1 class="title red">MLG</h1>
-        </a>
-      </div>
-      <div class="nav-right is-hidden-mobile">
-        <a class="nav-item is-tab is-hidden-mobile">Bio</a>
-        <a class="nav-item is-tab is-hidden-mobile"></a>
-      </div>
-    </div>
-  </nav>
-
   <body class="<%= page_classes %>">
     <%= yield %>
   </body>
 
   <footer class="footer">
     <div class="container">
-      <div class="content has-text-centered">
+    <div class="content is-pulled-left">
+      <p> © Melissa Leigh Gore, <%= Date.today.year %></p>
+    </div>
+
+      <div class="content is-pulled-right">
         <p>
           <a class="icon" href="https://github.com/mlg-">
             <i class="fa fa-github"></i>

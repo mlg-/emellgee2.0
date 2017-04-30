@@ -21,8 +21,9 @@ body {
 }
 
 p {
+  font-color: rgba(0, 0, 0, 0.91);
   font-weight: 300;
-  font-size: 1.1em;
+  font-size: 1.2em;
   margin-bottom: 8px;
 }
 
@@ -31,6 +32,7 @@ a {
 }
 
 footer {
+  border-top: 4px solid $red;
   max-height: 3%;
 }
 
@@ -44,6 +46,10 @@ footer {
   margin-top: 15px;
 }
 
+.margin-top-med {
+  margin-top: 30px;
+}
+
 .red {
   color: $red;
 }
@@ -52,7 +58,7 @@ footer {
 
 @media (min-width: 769px) {
   nav.home {
-    padding-top: 98px;
+    padding-top: 198px;
   }
 }
 
@@ -64,11 +70,6 @@ nav {
     font-size: 1.2em;
     font-weight: 200;
     padding: 0 15px;
-  }
-}
-@media (min-width: 769px) {
-  .secondary {
-    margin-top: 50px;
   }
 }
 
@@ -83,13 +84,35 @@ nav {
 .variant-2 {
   border-bottom: 0.5px dashed black;
   color: black;
-  max-width: 120px;
+  max-width: 128px;
 }
 
 .about-me-variant {
   border-bottom: 0.5px dashed $red;
   color: $red;
   max-width: 140px;
+}
+
+.bio {
+  padding-top: 3%;
+}
+
+.code-section {
+  background: url("/images/poppies.jpg") no-repeat right;
+
+  .overlay {
+    background-color: rgba(240, 240, 240, 0.6);
+    border-radius: 7px;
+  }
+}
+
+.blog-section {
+  background: url("/images/desk.jpg") no-repeat right;
+
+  .overlay {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 7px;
+  }
 }
 
 .about-me {
@@ -113,6 +136,16 @@ nav {
   margin-top: 25px;
 }
 
+.headshot {
+  border-radius: 7px;
+}
+
 .xu {
   margin-top: 20px;
+}
+
+// writing
+
+.book-tile {
+  max-height: 300px;
 }

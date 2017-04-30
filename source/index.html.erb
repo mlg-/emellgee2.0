@@ -7,19 +7,9 @@ title: melissa leigh gore
       <%= partial "intro" %>
     </div>
     <div class="column">
-<!--
-      <div class="tile is-ancestor">
-        <div class="tile is-parent">
-          <article class="about-me tile is-child box">
-            <h2 class="about-me-variant title">about me</h2>
-          </article>
-        </div>
-      </div>
-    </div>
- -->
       <nav class="home has-text-centered">
-        <a href="/bio.html">about me</a> | 
-        <a href="/blog.html">blog</a>
+        <a href="#about-me">about me</a> |
+        <a href="#blog">blog</a>
       </nav>
    </div>
   </div>
@@ -29,15 +19,21 @@ title: melissa leigh gore
       <div class="tile is-ancestor">
         <div class="tile is-parent">
           <article class="code tile is-child box">
-            <a href="/code.html"><h2 class="variant-1 title is-2">code</h2></a>
+            <a href="#code"><h2 class="variant-1 title is-2">code</h2></a>
           </article>
         </div>
         <div class="tile is-parent">
           <article class="poetry tile is-child box">
-            <a href="/poetry.html"><h2 class="variant-2 title is-2">poetry</h2></a>
+            <a href="#writing"><h2 class="variant-2 title is-2">writing</h2></a>
           </article>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+<%= partial "bio" %>
+<%= partial "code" %>
+<%= partial "writing" %>
+<%= partial "blog" %>
+

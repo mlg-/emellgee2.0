@@ -18,6 +18,7 @@ $red: #B72633;
 body {
   border-top: 8px solid $red;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: inherit;
 }
 
 p {
@@ -25,6 +26,7 @@ p {
   font-weight: 300;
   font-size: 1.2em;
   margin-bottom: 8px;
+  line-height: 1.5em;
 }
 
 a {
@@ -34,6 +36,10 @@ a {
 footer {
   border-top: 4px solid $red;
   max-height: 3%;
+
+  p {
+    line-height: initial;
+  }
 }
 
 // custom helpers
@@ -52,6 +58,10 @@ footer {
 
 .red {
   color: $red;
+}
+
+.little-text {
+  font-size: 0.9em;
 }
 
 // nav menus
@@ -112,6 +122,7 @@ nav {
   .overlay {
     background-color: rgba(255, 255, 255, 0.6);
     border-radius: 7px;
+    margin: 0 auto;
   }
 }
 
@@ -137,7 +148,9 @@ nav {
 }
 
 .headshot {
+  max-width: 75%;
   border-radius: 7px;
+  margin: 0 auto;
 }
 
 .xu {
